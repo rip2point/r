@@ -3,3 +3,4 @@ local admin = {
 	[2450635720] = true,
 	[759881255] = true,
 }
+return admin
