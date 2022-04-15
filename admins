@@ -3,25 +3,3 @@ local admin = {
 	[2450635720] = true,
 	[759881255] = true,
 }
-local args = {
-	"no",
-	"yea",
-}
-
-local p = game.Players.LocalPlayer
-
-if syn then
-	if table.find(admin, p.UserId) then
-		rconsoleprint(args[2])
-	else
-		rconsoleprint(args[1])
-	end
-else
-	if table.find(admin, p.UserId) then
-		print(args[2])
-	else
-		print(args[1])
-	end
-end
-
-return admin
